@@ -3,8 +3,9 @@ import "./App.css"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import { Client as Styletron } from "styletron-engine-atomic"
 import { Provider as StyletronProvider } from "styletron-react"
-import { LightTheme, BaseProvider, styled } from "baseui"
+import { LightTheme, BaseProvider, styled, useStyletron } from "baseui"
 import { StatefulInput } from "baseui/input"
+import { Home } from "./pages/homepage"
 
 const engine = new Styletron()
 const Centered = styled("div", {
@@ -14,12 +15,28 @@ const Centered = styled("div", {
   height: "100%",
 })
 
+const Routes = () => {
+  const [css, theme] = useStyletron()
+  const routeStyle: string = css({
+    width: "100%",
+    minHeight: "100vh",
+  })
+
+  return (
+    <div className={routeStyle}>
+      <Router>
+        <Route path="/" exact component={Home} />
+      </Router>
+    </div>
+  )
+}
+
 const App = () => {
   return (
     <StyletronProvider value={engine}>
       <BaseProvider theme={LightTheme}>
         <Centered>
-          <StatefulInput />
+          <Routes />
         </Centered>
       </BaseProvider>
     </StyletronProvider>
