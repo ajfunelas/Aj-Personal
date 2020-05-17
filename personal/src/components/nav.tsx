@@ -37,7 +37,7 @@ export const Nav = () => {
           <Link href="#basic-link1">About</Link>
         </NavigationItem>
         <NavigationItem>
-          <Link href="#basic-link2">Youtube</Link>
+          <Link href="https://www.youtube.com/channel/UC9w-PN6X-I6rMH-OLe8qaUw" target="_blank">Youtube</Link>
         </NavigationItem>
         <NavigationItem>
           <Link href="#basic-link3">Patreon</Link>
