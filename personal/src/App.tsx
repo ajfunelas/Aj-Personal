@@ -6,6 +6,7 @@ import { Provider as StyletronProvider } from "styletron-react"
 import { LightTheme, BaseProvider, styled, useStyletron } from "baseui"
 import { StatefulInput } from "baseui/input"
 import { Home } from "./pages/homepage"
+import { About } from "./pages/about"
 
 const engine = new Styletron()
 const Centered = styled("div", {
@@ -26,6 +27,7 @@ const Routes = () => {
     <div className={routeStyle}>
       <Router>
         <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About}/>
       </Router>
     </div>
   )

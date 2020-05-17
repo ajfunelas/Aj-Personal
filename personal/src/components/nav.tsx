@@ -8,6 +8,7 @@ import {
 } from "baseui/header-navigation"
 import { StyledLink as Link } from "baseui/link"
 import { Button } from "baseui/button"
+import { About } from "../pages/about"
 
 export const Nav = () => {
   const [css, theme] = useStyletron()
@@ -34,7 +35,7 @@ export const Nav = () => {
       <NavigationList $align={ALIGN.center} />
       <NavigationList $align={ALIGN.right}>
         <NavigationItem>
-          <Link href="#basic-link1">About</Link>
+          <Link href="about">About</Link>
         </NavigationItem>
         <NavigationItem>
           <Link href="https://www.youtube.com/channel/UC9w-PN6X-I6rMH-OLe8qaUw" target="_blank">Youtube</Link>
