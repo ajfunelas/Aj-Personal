@@ -19,8 +19,8 @@ export const Nav = () => {
   })
   const h1Style: string = css({
     fontFamily: "Roboto",
-    fontSize: "35px",
-    letterSpacing: "-1px",
+    fontSize: "20px",
+    letterSpacing: "-1.5px",
     color: "rgba(69,69,69,.8)",
   })
   const headerStyle: string = css({

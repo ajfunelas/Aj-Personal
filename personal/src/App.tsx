@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import { Client as Styletron } from "styletron-engine-atomic"
 import { Provider as StyletronProvider } from "styletron-react"
 import { LightTheme, BaseProvider, styled, useStyletron } from "baseui"
-import { StatefulInput } from "baseui/input"
 import { Home } from "./pages/homepage"
 import { About } from "./pages/about"
 
