@@ -23,6 +23,7 @@
     "reactstrap": "^8.4.1",
     "styletron-engine-atomic": "^1.4.6",
     "styletron-react": "^5.2.7",
+    "tailwindcss": "^1.4.6",
     "typescript": "^3.7.5"
   },
   "scripts": {
