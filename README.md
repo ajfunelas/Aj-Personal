@@ -1,3 +1,0 @@
-# Aj-Personal
-
-New landing
